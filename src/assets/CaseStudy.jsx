@@ -1,5 +1,5 @@
 import React from 'react';
-import '../css/CaseStudy.css';
+import '../css/caseStudy.css';
 import { Link } from 'react-router-dom';
 
 function CaseStudy({id}) {
