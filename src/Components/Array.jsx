@@ -4,14 +4,14 @@ export default function Array() {
     // State to keep track of the current testimonial index
     const [currentIndex, setCurrentIndex] = useState(0);
 
-    // Array of testimonials
+    
     const update = [
         {
             pText: "Hello, how are we doing? Please subscribe to my YouTube channel.",
             pieImage: "/assets/images/night_class.jpg",
             name: "Harrison",
             founder: "CEO Nanocodes Programming",
-            videoClip: "/src/assets/images/Image Admin_bg.png"
+            videoClip: "/assets/images/Image Admin_bg.png"
         },
         {
             pText: "Don't forget to like and share our latest videos!",
@@ -25,7 +25,7 @@ export default function Array() {
             pieImage: "/assets/images/potriat.png",
             name: "John Smith",
             founder: "CTO Nanocodes Development",
-            videoClip: "/src/assets/images/nano.png"
+            videoClip: "/assets/images/nano.png"
         },
         {
             pText: "Stay tuned for more amazing content.",

@@ -12,20 +12,20 @@ function Index() {
     const typeWriterInterval = setInterval(() => {  
       if (indexRef.current < textDisplay.length) {  
         setDisplayedText((prev) => prev + textDisplay[indexRef.current]);  
-        indexRef.current += 1; // Increment the index 
+        indexRef.current += 1;
         console.log(`Index: ${indexRef.current}, Character: ${textDisplay[indexRef.current]}`); 
       } else {  
-        clearInterval(typeWriterInterval); // Clear interval when done  
+        clearInterval(typeWriterInterval);
       }  
     }, 120); // Make the typing slower to avoid skips  
 
     const timer = setTimeout(() => {  
       navigate('/home');  
-    }, 10000); // Navigate after 10 seconds  
+    }, 10000); 
 
     return () => {  
       clearInterval(typeWriterInterval); // Prevent leaks  
-      clearTimeout(timer); // Cleanup the timeout  
+      clearTimeout(timer);
     };  
   }, [navigate]);  
 
