@@ -17,7 +17,7 @@ function Index() {
       } else {  
         clearInterval(typeWriterInterval);
       }  
-    }, 120); // Make the typing slower to avoid skips  
+    }, 128); // Make the typing slower to avoid skips  
 
     const timer = setTimeout(() => {  
       navigate('/home');  
