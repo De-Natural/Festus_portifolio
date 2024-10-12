@@ -132,12 +132,15 @@
 
 
 @media screen and (max-width: 700px) {
+    .service{
+        width: 100vw;
+    }
     .two{
         min-height: 900px;
         flex-direction: column;
     }
     .card{
-        width: 100%;
+        width: 95% !important;
     }
     .card>a{
         transform: translateX(0);

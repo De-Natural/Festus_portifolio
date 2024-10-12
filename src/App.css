@@ -130,6 +130,7 @@ body{
   /* border: 1px solid red; */
   top: 10px;
   right: 10px;
+  display: none;
 }
 .personnal img{
   height: 60vh;
@@ -206,6 +207,7 @@ body{
   }
   .first-page{
     height: 200vh;
+    width: 100vw;
     /* border: 1px solid blue; */
   }
   .nav{

@@ -266,6 +266,9 @@ footer{
 
 
 @media screen and (max-width: 760px) {
+    .testimonal{
+        width: 100vw;
+    }
     .projector{
         min-height: 750px;
         width: 100%;
@@ -323,6 +326,12 @@ footer{
     .birds{
         width: 80px;
     }
+    #mess{
+        display: none;
+    }
+    #messa{
+        display: none;
+    }
     
 }
 
@@ -335,6 +344,32 @@ footer{
     }
     #messa{
         left: 20px;
+    }
+    .left{
+        /* border: 1px solid blue; */
+        gap: 10px;
+    }
+    .right{
+        /* border: 1px solid red; */
+        padding-top: 10px;
+    }
+    .idea{
+        height: 850px;
+        gap: 10px;
+    }
+    .email{
+        height: 60px;
+    }
+    /* .pie{
+        border: 1px solid red;
+    } */
+    .picture{
+        /* border: 1px solid blanchedalmond; */
+        width: 120px;
+    }
+    .lane{
+        width: 105%;
+        /* border: 1px solid green; */
     }
 }
 
@@ -350,5 +385,6 @@ footer{
         height: 400px;
         width: 96%;
     }
+    
 }
 
