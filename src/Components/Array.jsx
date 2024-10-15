@@ -7,32 +7,39 @@ export default function Array() {
     
     const update = [
         {
-            pText: "Hello, how are we doing? Please subscribe to my YouTube channel.",
-            pieImage: "/assets/images/night_class.jpg",
+            pText: "Actually festus is an extremely unique in and perfected in frontend, and he can deliver.",
+            pieImage: "/assets/images/1-intro-photo-final.jpg",
             name: "Harrison",
             founder: "CEO Nanocodes Programming",
-            videoClip: "/assets/images/Image Admin_bg.png"
+            videoClip: "/assets/images/real_estate.jpg"
         },
         {
-            pText: "Don't forget to like and share our latest videos!",
-            pieImage: "/assets/images/glass.png",
-            name: "Jane Doe",
-            founder: "COO Nanocodes Media",
-            videoClip: "/assets/images/marketing_images.jpeg"
+            pText: "Festus is one of the best digital marketer I have ever met in my life, and he is good at product branding.",
+            pieImage: "/assets/images/Ruth.jpg",
+            name: "Ruth ozioma",
+            founder: "CEO Rubyfirm Marketing Agency",
+            videoClip: "/assets/images/branding_images.webp"
         },
         {
-            pText: "We are growing, thanks for your support!",
-            pieImage: "/assets/images/potriat.png",
-            name: "John Smith",
+            pText: "To me he is septacular in what he is doing and worth to be refer to!",
+            pieImage: "/assets/images/Sky_babe.jpg",
+            name: "Chizurumoke sky",
             founder: "CTO Nanocodes Development",
-            videoClip: "/assets/images/nano.png"
+            videoClip: "/assets/images/React_cake.png"
         },
         {
-            pText: "Stay tuned for more amazing content.",
-            pieImage: "/assets/images/pic.bg.jpg",
-            name: "Alice Johnson",
-            founder: "CFO Nanocodes Finance",
-            videoClip: "/assets/images/landing_bg.jpg"
+            pText: "Am short of words but all I know is that festus is trustworthy to handle company projects.",
+            pieImage: "/assets/images/Oma.jpg",
+            name: "Dennis Martha",
+            founder: "Nanocodes Cusomer care",
+            videoClip: "/assets/images/Nano_events.png"
+        },
+        {
+            pText: "He is someone that even if others fails, he is still there as a hope for great change. Bravo festus",
+            pieImage: "/assets/images/De_inspire.jpg",
+            name: "God'swill Izuchukwu",
+            founder: "Founder of importations",
+            videoClip: "/assets/images/global_pug.png"
         }
     ];
 

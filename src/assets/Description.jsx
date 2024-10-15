@@ -2,7 +2,7 @@ import React from 'react'
 
 function Description ({id}) {
   return (
-    <section id={id}>
+    <section id={id} className='section_box'>
     <div className='first-page'>
       <div className="cover"></div>
       <div className="nav">
@@ -43,7 +43,7 @@ function Description ({id}) {
           </div>
           <div className="log">
             <div className="img"><img src="/assets/images/Company Logo spotify.png" alt="" /></div>
-            <div className="img"> <img src="/assets/images/Company Logo@2x.png" alt="" /></div>
+            <div className="img"> <img src="/assets/images/nanocodes_logo.jpg" alt="" /></div>
           </div>
         </div>
       </div>

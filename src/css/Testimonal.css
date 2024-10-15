@@ -3,6 +3,10 @@
     padding: 0;
     box-sizing: border-box;
 }
+.section_box{
+    /* overflow: hidden; */
+    width: 100%;
+}
 .testimonal{
     min-height: 100vh;
     width: 100%;
@@ -15,7 +19,10 @@
     background: rgb(24, 18, 18);
     color: white;
     padding: 10px;
+    overflow: hidden;
+    margin-left: -10px;
 }
+
 .projector{
     height: 400px;
     width: 70%;
@@ -72,6 +79,8 @@
 .pie img{
     height: 100%;
     width: 100%;
+    object-fit: cover;
+    object-position: center;
 }
 .picture{
     height: 40px;
@@ -116,11 +125,13 @@
 .videoClip img{
     height: 100%;
     width: 100%;
+    object-fit: contain;
+    object-position: center;
 }
 .idea{
     height: 400px;
     width: 80%;
-    background: #0E2B1B;
+    background: #121516;
     color: white;
     display: flex;
     align-items: center;
@@ -150,8 +161,8 @@ input[type='button']{
     width: 150px;
     border-radius: 8px;
     border: none;
-    background-color:#F3DB61;
-    color: rgb(80, 80, 80);
+    background-color: white;
+    color: rgb(14, 10, 10);
     margin-left: -50%;
     cursor: pointer;
 }
@@ -172,12 +183,13 @@ input[type='button']{
 .email{
     height: 80px;
     width: 80%;
-    background: #154129;
+    background:  #121516;
     color: white;
     border-radius: 10px;
     display: grid;
     place-content: center;
     position: relative;
+    box-shadow: 1px 1px 4px  #121516;
 }
 .email p{
     font-size: 15px;
@@ -273,6 +285,8 @@ footer{
         min-height: 750px;
         width: 100%;
         flex-direction: column;
+        /* border: 1px solid red; */
+        margin-left: 20px;
     } 
     .writeUp{
         width: 100%;
@@ -292,6 +306,12 @@ footer{
         width: 100%;
         flex-direction: column;
     }
+    .left>h2{
+        margin-bottom: 20px;
+    }
+    .left>p{
+        margin-bottom: 20px;
+    }
     .left, .right{
         width: 100%;
     }
@@ -309,6 +329,9 @@ footer{
     }
     .connect{
         height: 120px;
+    }
+    .connect>p{
+        display: none;
     }
     .join{
         height: 350px;

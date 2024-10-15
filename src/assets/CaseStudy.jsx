@@ -1,10 +1,34 @@
 import React from 'react';
 import '../css/caseStudy.css';
 import { Link } from 'react-router-dom';
+// import { DoughnutChat } from 'co'
+import CircularProgressBar from '../Components/DoughnutChat';
 
 function CaseStudy({id}) {
+  let chart = [
+    {
+      course: 'html and css',
+      color: '#ff5722',
+      percent: 80
+    },
+    {
+      course: 'javascript',
+      color: '#F7DF1E',
+      percent: 75
+    },
+    {
+      course: 'React',
+      color: '#61dafb',
+      percent: 60
+    },
+    {
+      course: 'marketing',
+      color: 'green',
+      percent: 50
+    },
+  ]
   return (
-    <section id={id}>
+    <section id={id} className='section_box'>
     <div className='CaseStudy'>
       <div className="heading">
         <h2>Latest Case Study</h2>
@@ -18,7 +42,7 @@ function CaseStudy({id}) {
       </div>
       <div className='project'>
         <div className="video">
-          <a href="https://my-cake-with-react-corrected-version.vercel.app/"><img src="/assets/images/React_cake.png" alt="" /></a>
+          <a href="https://my-cake-with-react-corrected-version.vercel.app/"><img src="/assets/images/cake website.jpg" alt="" /></a>
         </div>
         <div className="video">
           <img src="/assets/images/Image Admin_bg.png" alt="" />
@@ -30,8 +54,22 @@ function CaseStudy({id}) {
           <div className="mop"></div>
         </div>
         <div className="video">
-          <a href="#"><img src="/assets/images/Nano_events.png" alt="" /></a>
+          <a href="#"><img src="/assets/images/upcoming event.jpg" alt="" /></a>
         </div>
+      </div>
+      <div className='chart'>
+        <p>what am good at</p>
+        {chart?.map((data,indx) => (
+          <div className='miniChart'>
+            
+            <CircularProgressBar
+              color={data?.color}
+              percentage={data?.percent}
+            />
+            <p className='courseTitle'>{data?.course}</p>
+          </div>
+        ))}
+        
       </div>
     </div>
     </section>

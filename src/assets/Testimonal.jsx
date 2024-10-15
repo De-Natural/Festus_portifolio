@@ -3,7 +3,9 @@ import '../css/Testimonal.css';
 import Array from '../Components/Array';
 
 function Testimonal() {
+
   return (
+    <section className='section_box'>
     <div className='testimonal'>
       <Array />
 
@@ -47,6 +49,7 @@ function Testimonal() {
             <a href="https://github.com/De-Natural">GitHub</a>
             <a href="https://www.facebook.com/">Facebook</a>
             <a href="https://www.instagram.com/breez.e77/">Instagram</a>
+            <a href="https://www.linkedin.com/feed/">LinkedIn</a>
           </div>
 
         </div>
@@ -55,6 +58,7 @@ function Testimonal() {
         </div>
       </footer>
     </div>
+    </section>
   )
 }
 

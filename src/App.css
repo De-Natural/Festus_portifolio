@@ -2,18 +2,22 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  /* border: 2px solid purple; */
 }
 html {
   scroll-behavior: smooth;
 }
 
 body{
-  background-color: #0f0f0f0f;
+  background-color:  rgb(24, 18, 18);
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 10px;
 }
-
+.section_box{
+  overflow: hidden;
+  width: 100%;
+}
 .cover{
   position: absolute;
   top: 0;
@@ -33,12 +37,14 @@ body{
   justify-content: center;
   background-image: url('/assets/images/landing_bg.jpg');
   background-repeat: no-repeat;
-  background-size: 100% 100%;
+  background-size: cover;
+  background-position: center;
   object-fit: contain;
   position: relative;
   z-index: 2;
   padding-top: 10px;
-  
+  object-fit: cover;
+  object-position: center;
 }
 .nav{
   height: 55px;
@@ -54,8 +60,8 @@ body{
 .nav a{
   height: 25px;
   width: 100px;
-  background: blue;
-  color: white;
+  background: #61dafb;
+  color: black;
   font-size: 15px;
   border-radius: 6px;
   cursor: pointer;
@@ -64,6 +70,10 @@ body{
   justify-content: center;
   text-decoration: none;
 }
+.nav a:hover{
+  background: blue;
+  color: white;
+}
 .profile{
   width: 280px;
   display: flex;
@@ -71,6 +81,9 @@ body{
   justify-content: space-evenly;
   font-size: 20px;
   /* border: 1px solid blue; */
+}
+.profile>p{
+  color: wheat;
 }
 .pic{
   height: 45px;
@@ -114,8 +127,8 @@ body{
   width: 120px;
   cursor: pointer;
   border: none;
-  background: blue;
-  color: white;
+  background: #61dafb;
+  color: black;
   border-radius: 5px;
   margin-top: 10px;
   font-size: 18px;
@@ -123,6 +136,10 @@ body{
   align-items: center;
   justify-content: center;
   text-decoration: none;
+}
+.hey>a:hover{
+  background: blue;
+  color: white;
 }
 .personnal{
   height: 250px;
@@ -151,12 +168,14 @@ body{
   font-weight: 500;
   margin-left: 20px;
   margin-top: 60vh;
+  color: white;
 }
 #speech p{
   font-size: 10px;
   position: absolute;
   top: 80%;
   left: 10%;
+  color: gray
 }
 #speech{
   height: 350px;
@@ -219,9 +238,25 @@ body{
     /* border: 1px solid red; */
     margin-bottom: 20px;
   }
+  .hey{
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+  .hey>p{
+    text-align: center;
+  }
+  .hey>span{
+    text-align: center;
+  }
+  .hey>a{
+    margin-top: 30px;
+    /* background: #61dafb; */
+  }
   .nav>a{
     height: 50px;
     cursor: pointer;
+    margin: auto 0;
   }
   .profile{
     height: 120px;
@@ -282,15 +317,19 @@ body{
   .companies{
     /* border: 1px solid blue; */
     width: 95%;
-    left: 0px;
+    left: 10px;
     right: 0;
     top: 60%;
+  }
+  .log:nth-of-type(2){
+    margin-top: 0;
   }
   #speech{
     height: 350px;
     width: 350px;
     margin-top: 120px;
     /* border: 1px solid purple; */
+    text-align: center;
   }
   #speech>span{
     color: white;
