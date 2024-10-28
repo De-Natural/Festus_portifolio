@@ -54,7 +54,7 @@ function CaseStudy({id}) {
           <div className="mop"></div>
         </div>
         <div className="video">
-          <a href="#"><img src="/assets/images/upcoming event.jpg" alt="" /></a>
+          <a href="https://nanoeventhoster.com/"><img src="/assets/images/upcoming event.jpg" alt="" /></a>
         </div>
       </div>
       <div className='chart'>
