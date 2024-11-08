@@ -2,31 +2,43 @@ import React from 'react';
 import '../css/caseStudy.css';
 import { Link } from 'react-router-dom';
 // import { DoughnutChat } from 'co'
-import CircularProgressBar from '../Components/DoughnutChat';
+// import CircularProgressBar from '../Components/DoughnutChat';
+import image1 from '/assets/images/html.png'
+import image2 from "/assets/images/css-3.png" 
+import image3 from "/assets/images/javascript.png" 
+import image4 from "/assets/images/atomic-symbol.png" 
+import image5 from "/assets/images/email2.png.png" 
 
 function CaseStudy({id}) {
-  let chart = [
+  let imageArr = [
     {
-      course: 'html and css',
-      color: '#ff5722',
-      percent: 80
+      pic: image1,
+      course: "Html"
     },
     {
-      course: 'javascript',
-      color: '#F7DF1E',
-      percent: 75
+      pic: image2,
+      course: "CSS"
     },
     {
-      course: 'React',
-      color: '#61dafb',
-      percent: 60
+      pic: image3,
+      course: "Javascripts"
     },
     {
-      course: 'marketing',
-      color: 'green',
-      percent: 50
+      pic: image4,
+      course: "React"
+    },
+    {
+      pic: image5,
+      course: "Marketing"
     },
   ]
+  // const  imageArr = [
+  //   image1,
+  //   image2,
+  //   image3,
+  //   image4,
+  //   image5
+  // ]
   return (
     <section id={id} className='section_box'>
     <div className='CaseStudy'>
@@ -59,13 +71,14 @@ function CaseStudy({id}) {
       </div>
       <div className='chart'>
         <p>what am good at</p>
-        {chart?.map((data,indx) => (
+        {imageArr?.map((data,index) => (
           <div className='miniChart'>
             
-            <CircularProgressBar
+            {/* <CircularProgressBar
               color={data?.color}
               percentage={data?.percent}
-            />
+            /> */}
+            <img src={data?.pic} alt="" />
             <p className='courseTitle'>{data?.course}</p>
           </div>
         ))}

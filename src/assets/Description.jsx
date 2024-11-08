@@ -26,11 +26,11 @@ function Description ({id}) {
       </div>
       <div className="content">
         <div id="speech">
-          <span>I have work for over 40 <sup>+</sup><br /> happy Clients all over the world</span>
-          <p>Suspendisse eget ultricies felis,<br /> 
+          <span>I have work for over 10 <sup>+</sup><br /> happy Clients all over the world</span>
+          {/* <p>Suspendisse eget ultricies felis,<br /> 
             in lacinia lectus. Morbi accumsan dapibus tortor,<br />
             in fermentum odio malesuada in aliquam sed ipsum tristique.
-          </p>
+          </p> */}
         </div>
         <div className="companies">
           <div className="log">

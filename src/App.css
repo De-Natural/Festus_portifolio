@@ -58,12 +58,12 @@ body{
   top: 10px;
 }
 .nav a{
-  height: 25px;
-  width: 100px;
+  height: 35px;
+  width: 120px;
   background: #61dafb;
-  color: black;
-  font-size: 15px;
-  border-radius: 6px;
+  color: #000000;
+  font-size: 18px;
+  border-radius: 8px;
   cursor: pointer;
   display: flex;
   align-items: center;

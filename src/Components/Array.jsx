@@ -59,7 +59,7 @@ export default function Array() {
                 <h2>Client Testimonial</h2>
                 <p>Real feedback from satisfied Clients</p>
                 <div className="post">
-                    <img src="/assets/images/Group_comma.png" alt="" />
+                    <img src="/assets/images/Group_comma.png" id='ican' alt="" />
                     <p>{update[currentIndex].pText}</p>
                 </div>
                 <img src="/assets/images/Icon_quote_icon.png" alt="" id='icon'/>

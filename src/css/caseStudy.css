@@ -26,13 +26,13 @@
     z-index: 2;
 }
 .heading h2{
-    font-size: 26px;
+    font-size: bold;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: white;
+    color: #ffffff;
 }
 .heading>p{
-    font-size: 12px;
-    color: white;
+    font-size: 15px;
+    color: #ffffff;
 }
 .navigation{
     height: 50px;
@@ -105,13 +105,13 @@
     z-index: 3;
 }
 .cop>span{
-    font-size: 10px;
+    font-size: 14px;
     font-weight: 100;
     font-family: Georgia, 'Times New Roman', Times, serif;
     color: whitesmoke;
 }
 .cop>a{
-    font-size: 13px;
+    font-size: 15px;
     text-decoration: none;
     color:#F3DB61;
 }
@@ -121,7 +121,7 @@
     width: 300px;
     top: 0;
     left: 0;
-    background: black;
+    background: #3B3B3B;
     opacity: 0.2;
     z-index: 0;
 }
@@ -149,7 +149,7 @@
     width: 80%;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
     /* border: 2px solid grey; */
     position: relative;
 }
@@ -166,6 +166,13 @@
     text-align: center;
     text-transform: capitalize;
 }
+.miniChart img{
+    height: 120px;
+    width: 150px;
+}
+/* .courseTitle{
+    border: 1px solid red;
+} */
 
 
 
@@ -224,6 +231,10 @@
     .chart>p{
         top: -20px;
         margin-bottom: 30px;
+    }
+    .miniChart img{
+        height: 80px;
+        width: 100px;
     }
 }
 

@@ -7,7 +7,7 @@
    position: relative;
    width: 10rem;
    height:8rem;
-   /* border: 1px solid red; */
+   border: 1px solid red;
 }
 svg{
     position: absolute;
@@ -31,6 +31,7 @@ svg{
     font-size: 18px;
     font-weight: bold;
 }
+
 
 
 

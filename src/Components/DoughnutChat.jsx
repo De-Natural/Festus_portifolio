@@ -29,8 +29,8 @@ const CircularProgressBar = ({ color, percentage }) => {
       <svg
         className=""
         viewBox="0 0 40 40"
-        width="100%"
-        height="100%"
+        width="50%"
+        height="50%"
       >
         {/* Background circle */}
         <circle
@@ -39,7 +39,7 @@ const CircularProgressBar = ({ color, percentage }) => {
           r={radius}
           cx="20"
           cy="20"
-          stroke="rgba(128,128,128,0.1)" // Light gray background
+          stroke="rgba(128,128,128,0.1)"
         />
         {/* Progress circle */}
         <circle
@@ -48,7 +48,7 @@ const CircularProgressBar = ({ color, percentage }) => {
           r={radius}
           cx="20"
           cy="20"
-          stroke={color} // Dynamic color
+          stroke={color}
           strokeDasharray={circumference}
           strokeDashoffset={strokeDashoffset}
           strokeLinecap="round"
@@ -57,6 +57,8 @@ const CircularProgressBar = ({ color, percentage }) => {
       <div className="textBox">
           <span className="percentText">{percent}%</span>
       </div>
+
+      
     </div>
   );
 };

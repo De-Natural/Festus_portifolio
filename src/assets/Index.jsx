@@ -1,39 +1,51 @@
-import React, { useEffect, useState, useRef } from 'react';  
-import { useNavigate } from 'react-router-dom';  
-import '../css/Index.css';  
+import React, { useEffect, useState, useRef } from 'react';
+import { useNavigate } from 'react-router-dom';
+import '../css/Index.css';
 
-function Index() {  
-  const navigate = useNavigate();  
-  const [displayedText, setDisplayedText] = useState("");  
-  const textDisplay = "Welcome! I am glad that you wish to Explore my frontend journey, there you go!!!!";  
-  const indexRef = useRef(0); // Keep track of the index  
+function Index() {
+  const navigate = useNavigate();
+  const [displayedText, setDisplayedText] = useState("");
+  const textDisplay = "Welcome! I am glad that you wish to Explore my frontend journey, there you go!!!!";
+  const indexRef = useRef(0);
 
-  useEffect(() => {  
-    const typeWriterInterval = setInterval(() => {  
-      if (indexRef.current < textDisplay.length) {  
-        setDisplayedText((prev) => prev + textDisplay[indexRef.current]);  
+  useEffect(() => {
+    const typeWriterInterval = setInterval(() => {
+      if (indexRef.current < textDisplay.length) {
+        setDisplayedText((prev) => prev + textDisplay[indexRef.current]);
         indexRef.current += 1;
-        console.log(`Index: ${indexRef.current}, Character: ${textDisplay[indexRef.current]}`); 
-      } else {  
+      } else {
         clearInterval(typeWriterInterval);
-      }  
-    }, 128); // Make the typing slower to avoid skips  
+      }
+    }, 158);
 
-    const timer = setTimeout(() => {  
-      navigate('/home');  
-    }, 10000); 
+    const timer = setTimeout(() => {
+      clearInterval(typeWriterInterval);
+      navigate('/home');
+    }, 10000);
 
-    return () => {  
-      clearInterval(typeWriterInterval); // Prevent leaks  
+    return () => {
+      clearInterval(typeWriterInterval);
       clearTimeout(timer);
-    };  
-  }, [navigate]);  
+    };
+  }, [navigate, textDisplay]);
 
-  return (  
-    <div className="main">  
-      <div className="typewriter">{displayedText}</div> {/* Render the typed text */}  
-    </div>  
-  );  
-}  
+  useEffect(() => {
+    if (displayedText === textDisplay) {
+      // Resetting the displayed text after it has fully displayed
+      const resetTimer = setTimeout(() => {
+        setDisplayedText(" "); // Clear the displayed text
+        indexRef.current = 0; // Reset the index for a potential replay
+      }, 1000); // Optional delay before resetting
+
+      return () => clearTimeout(resetTimer);
+    }
+  }, [displayedText, textDisplay]);
+
+  return (
+    <div className="main">
+      <div className="typewriter">{displayedText}</div>
+    </div>
+  );
+}
 
 export default Index;

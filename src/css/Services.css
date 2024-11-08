@@ -15,7 +15,7 @@
     align-items: center;
     justify-content: space-around;
     padding-top: 10px;
-    background-color:#0c0d0ff5;
+    background-color:#0C0D0F;
     position: relative;
 }
 
@@ -33,7 +33,7 @@
 }
 .hip p{
     color: whitesmoke;
-    font-size: 10px;
+    font-size: 13px;
     text-align: center;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
@@ -77,11 +77,11 @@
 .card>p{
     font-size: 14px;
     color: white;
-    opacity: 0.4;
+    opacity: 0.6;
 }
 .card>a{
     transform: translateX(-80%);
-    color: wheat;
+    color: #F5DEB3;
     text-decoration: none;
 }
 #art{
@@ -103,7 +103,7 @@
 }
 .box{
     height: 120px;
-    width: 150px;
+    width: 180px;
     border: none;
     border-left: 1px solid blue;
     display: flex;
@@ -121,7 +121,7 @@
     margin-top: 40px;
 }
 .box p{
-    font-size: 10px;
+    font-size: 14px;
     color: white;
     font-weight: 100;
     font-family: 'Courier New', Courier, monospace;
@@ -160,15 +160,23 @@
         transform: translateX(0);
     }
     .footer{
-        /* height: 300px; */
+        height: 300px;
         min-height: 50vh;
         flex-wrap: wrap;
         grid-area: 10px;
         justify-content: none;
+        /* border: 1px solid red; */
+        margin-bottom: 100px;
     }
-    
+    .box{
+        justify-content: center;
+    }
     .box span{
         margin-top: 0;
+    }
+    .box p{
+        font-size: 12px;
+        margin-top: 5px;
     }
 }
 
