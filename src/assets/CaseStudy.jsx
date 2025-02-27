@@ -54,7 +54,7 @@ function CaseStudy({id}) {
       </div>
       <div className='project'>
         <div className="video">
-          <a href="https://my-cake-with-react-corrected-version.vercel.app/"><img src="/assets/images/cake website.jpg" alt="" /></a>
+          <a href="https://my-cake-website.vercel.app/"><img src="/assets/images/cake website.jpg" alt="" /></a>
         </div>
         <div className="video">
           <img src="/assets/images/Image Admin_bg.png" alt="" />

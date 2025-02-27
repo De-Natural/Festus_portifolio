@@ -18,6 +18,12 @@ export default function Display() {
       <div className="laptop">
         <a href="https://todo-with-react-vert.vercel.app/"><img src="/assets/images/Todo.png" alt="" /></a>
       </div>
+      <div className="laptop">
+        <a href="https://intern-project-b8lo.vercel.app/"><img src="/assets/images/food site.png" alt="" /></a>
+      </div>
+      <div className="laptop">
+        <a href="https://stain-stream.vercel.app/"><img src="/assets/images/film (1).png" alt="" /></a>
+      </div>
     </div>
   )
 }
