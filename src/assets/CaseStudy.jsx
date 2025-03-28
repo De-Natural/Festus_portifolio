@@ -70,7 +70,7 @@ function CaseStudy({id}) {
         </div>
       </div>
       <div className='chart'>
-        <p>what am good at</p>
+        <p className='chart-p'>what am good at</p>
         {imageArr?.map((data,index) => (
           <div className='miniChart'>
             
